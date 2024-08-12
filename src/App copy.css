@@ -1,0 +1,326 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+.content {
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color: #f2f4f6;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  padding-right: 20px;
+}
+
+.eth {
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+}
+
+.centerH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  padding-top: 16px;
+}
+
+.centerItems {
+  display: flex;
+  gap: 31px;
+  font-size: 16px;
+}
+
+.menuSelect {
+  color: #606060;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menuSelect:hover {
+  color: #3c3c3c;
+  transition: ease-in-out;
+}
+
+.leftH {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.rightH {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.activeTab {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 7px;
+  font-weight: 500;
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+.tab {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 7px;
+  font-weight: 500;
+  color: #606060;
+  text-decoration: none;
+  cursor: "pointer";
+}
+
+.tab:hover {
+  color: #444444;
+  cursor: "pointer";
+}
+
+.tabIcon {
+  color: #606060;
+}
+
+.tabIcon:hover {
+  color: #444444;
+}
+
+.headerItem {
+  padding: 6px;
+  padding-left: 15px;
+  border-radius: 7px;
+  font-weight: 500;
+  background-color: #ffffff;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connectButton {
+  background-color: #008def;
+  padding: 9px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 100px;
+  color: #fcfcfc;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.connectButton:hover {
+  cursor: pointer;
+  background-color: #008def;
+}
+
+.formBox {
+  background-color: #ffffff;
+  width: 33%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-center;
+  align-items: flex-center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.tetherLogo {
+  width: 26px;
+  height: 26px;
+}
+
+.selectionHeading {
+  color: #464646;
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.selectionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.selectionSubsection {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.subtext {
+  color: #7a8aa0;
+  font-size: 13px;
+}
+.formHeading {
+  display: flex;
+  gap: 1%;
+  align-items: center;
+  justify-content: start;
+  color: #464646;
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 8px;
+}
+
+.formInputs {
+  padding-top: 35px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+.formButton {
+  background-color: #008def;
+  height: 50px;
+  width: 100%;
+  padding: 9px;
+  padding-top-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  color: #fcfcfc;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.3s;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.formButtonDisabled {
+  opacity: 0.5;
+  background-color: #008def;
+  height: 50px;
+  width: 100%;
+  padding: 9px;
+  padding-top-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  color: #fcfcfc;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 0.3s;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.formButton:hover {
+  cursor: pointer;
+  background-color: #008def;
+}
+
+.formButton:hover {
+  cursor: pointer;
+  background-color: #008def;
+}
+
+.labels {
+  font-size: 16px;
+  font-weight: 500;
+  color: #464646;
+}
+
+.errorMessage {
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  background-color: #ff5b5b;
+  padding: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border-radius: 6px;
+}
+.buttonContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.balanceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 33%;
+  border-radius: 20px;
+  min-height: 65px;
+  border-radius: 15px;
+  flex-direction: column;
+  gap: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.balances {
+  display: flex;
+  flex-direction: column;
+  flex: space-between;
+  align-items: start;
+}
+
+.balanceAmount {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.balanceTitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: #464646;
+}
+
+.balanceConnectWallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 33px;
+  width: 100%;
+}
+
+.footerLink {
+  font-size: 12px;
+  color: #7b7b7b;
+}
+.footerLink:hover {
+  font-size: 12px;
+  color: #008def;
+  transition: all 0.15s ease-in-out;
+}

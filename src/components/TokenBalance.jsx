@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useBalance } from "wagmi";
 import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 
 function TokenBalance({ token, address, image }) {
   const { data, isError, isLoading } = useBalance({

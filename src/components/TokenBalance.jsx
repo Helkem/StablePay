@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useBalance } from "wagmi";
-import { Skeleton } from "antd";
-import "antd/dist/antd.css";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 function TokenBalance({ token, address, image }) {
   const { data, isError, isLoading } = useBalance({
@@ -9,7 +9,7 @@ function TokenBalance({ token, address, image }) {
     token: token.address,
   });
 
-  if (isLoading) return <Skeleton active paragraph={{ rows: 1 }} />; // Ant Design Skeleton
+  if (isLoading) return <Skeleton height={20} width={200} />; // Skeleton loading bar
   if (isError) return <div>Error fetching {token.name} balance</div>;
 
   const balance = Number(data?.formatted) || 0;

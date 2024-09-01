@@ -59,7 +59,7 @@ function Balance({ isConnected, address }) {
         onChange={(e) => setSearchAddress(e.target.value)}
         style={{
           marginBottom: "10px",
-          width: "400px",
+          width: "420px",
           borderRadius: "15px",
           paddingLeft: "10px",
         }}

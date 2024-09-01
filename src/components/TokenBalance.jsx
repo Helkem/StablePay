@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useBalance } from "wagmi";
+import { Skeleton } from "antd";
+import "antd/dist/antd.css";
 
 function TokenBalance({ token, address, image }) {
   const { data, isError, isLoading } = useBalance({
@@ -7,7 +9,7 @@ function TokenBalance({ token, address, image }) {
     token: token.address,
   });
 
-  if (isLoading) return <div>Loading {token.name} balance...</div>;
+  if (isLoading) return <Skeleton active paragraph={{ rows: 1 }} />; // Ant Design Skeleton
   if (isError) return <div>Error fetching {token.name} balance</div>;
 
   const balance = Number(data?.formatted) || 0;

@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["lightweight-charts"],
+      external: ["lightweight-charts", "react-loading-skeleton"],
     },
   },
   optimizeDeps: {

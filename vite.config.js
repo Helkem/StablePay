@@ -6,10 +6,15 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["lightweight-charts"],
+      external: [],
     },
   },
   optimizeDeps: {
     include: ["lightweight-charts"],
+  },
+  resolve: {
+    alias: {
+      "lightweight-charts": "lightweight-charts",
+    },
   },
 });

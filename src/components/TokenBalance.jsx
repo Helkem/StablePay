@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useBalance } from "wagmi";
-import Skeleton from "react-loading-skeleton";
 
 function TokenBalance({ token, address, image }) {
   const { data, isError, isLoading } = useBalance({
@@ -8,7 +7,7 @@ function TokenBalance({ token, address, image }) {
     token: token.address,
   });
 
-  if (isLoading) return <Skeleton height={20} width={200} />;
+  if (isLoading) return <span>Loading Balances...</span>;
   if (isError) return <div>Error fetching {token.name} balance</div>;
 
   const balance = Number(data?.formatted) || 0;

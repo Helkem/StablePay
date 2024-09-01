@@ -17,7 +17,7 @@ code {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none; /* Webkit browsers (Safari, Chrome) */
+  -webkit-appearance: none; 
 }
 
 .ant-input {
@@ -51,3 +51,4 @@ input::-webkit-inner-spin-button {
   padding-right: 10px;
 
 }
+

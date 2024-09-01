@@ -371,7 +371,97 @@ header {
   transition: all 0.15s ease-in-out;
 }
 
-/* Responsive styles */
+.pricesContainer {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 50%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricesContainer h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.controlsContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tokenSelect,
+.timeframeSelect {
+  margin-right: 10px;
+}
+
+.tokenSelect {
+  margin-bottom: 20px;
+}
+
+.chartContainer {
+  height: 300px;
+  width: 100%;
+}
+
+.ant-select-selection-item img {
+  vertical-align: middle;
+}
+
+.priceInfo {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.token-selector {
+  margin-right: 10px;
+}
+
+.timeframe-selector {
+  margin-left: 10px;
+}
+
+.chart-ref {
+  width: 100%;
+  height: 300px;
+}
+
+.stablecoin-prices {
+  padding: 20px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.chart-container {
+  height: 400px;
+}
+
+.ant-btn {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .pricesContainer {
+    width: 90%;
+  }
+}
+
 @media (max-width: 1024px) {
   header {
     padding-left: 20px;

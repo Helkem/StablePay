@@ -9,7 +9,7 @@ function TokenBalance({ token, address, image }) {
     token: token.address,
   });
 
-  if (isLoading) return <Skeleton height={20} width={200} />; // Skeleton loading bar
+  if (isLoading) return <Skeleton height={20} width={200} />;
   if (isError) return <div>Error fetching {token.name} balance</div>;
 
   const balance = Number(data?.formatted) || 0;

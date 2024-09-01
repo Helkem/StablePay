@@ -2,6 +2,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Link, useLocation } from "react-router-dom";
 import { HiOutlineWallet } from "react-icons/hi2";
 import { FiArrowUpCircle } from "react-icons/fi";
+import { TbChartLine } from "react-icons/tb";
 
 function Header() {
   const location = useLocation();
@@ -36,6 +37,20 @@ function Header() {
                   color={location.pathname === "/balance" ? "#008def" : ""}
                 />
                 Balances
+              </Link>
+            </div>
+            <div className='menuSelect'>
+              <Link
+                to='/prices'
+                className={
+                  location.pathname === "/prices" ? "activeTab" : "tab"
+                }
+              >
+                <TbChartLine
+                  size={25}
+                  color={location.pathname === "/prices" ? "#008def" : ""}
+                />
+                Prices
               </Link>
             </div>
           </div>

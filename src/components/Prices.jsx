@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { Select } from "antd";
+import { Select, Spin } from "antd";
 import { createChart } from "lightweight-charts";
-import Skeleton from "react-loading-skeleton";
 
 const tokens = [
   {
@@ -192,7 +191,7 @@ function Prices() {
           </Select>
         </div>
         <div className='chartContainer' ref={chartContainerRef}>
-          {loading && <Skeleton height={300} />}
+          {loading && <Spin size='large' />}
           {error && <div className='errorMessage'>{error}</div>}
         </div>
         <div className='priceInfo'>

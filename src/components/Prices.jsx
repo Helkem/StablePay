@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { Select } from "antd";
 import { createChart } from "lightweight-charts";
 import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 
 const tokens = [
   {

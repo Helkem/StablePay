@@ -408,10 +408,6 @@ header {
   width: 100%;
 }
 
-.ant-select-selection-item img {
-  vertical-align: middle;
-}
-
 .priceInfo {
   margin-top: 10px;
   font-size: 14px;
@@ -451,11 +447,6 @@ header {
 
 .chart-container {
   height: 400px;
-}
-
-.ant-btn {
-  margin-right: 8px;
-  margin-bottom: 8px;
 }
 
 @media (max-width: 768px) {

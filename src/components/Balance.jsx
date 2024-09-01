@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import TokenBalance from "./TokenBalance";
+import { Input } from "antd";
+import { useState } from "react";
 
 function Balance({ isConnected, address }) {
+  const [searchAddress, setSearchAddress] = useState(address);
+
   const tokens = [
     {
       name: "Tether",
@@ -44,8 +48,23 @@ function Balance({ isConnected, address }) {
 
   return (
     <>
-      <div className='balanceHeading'>Your Balances</div>
-      <div className='subtext'>View your balance of stablecoins</div>
+      <div className='balanceHeading'>View Balances</div>
+      <div className='subtext'>
+        View balance of stablecoins for any ETH address
+      </div>
+      <Input
+        placeholder='Enter Ethereum address'
+        size='small'
+        value={searchAddress}
+        onChange={(e) => setSearchAddress(e.target.value)}
+        style={{
+          marginBottom: "10px",
+          width: "400px",
+          borderRadius: "15px",
+          paddingLeft: "10px",
+        }}
+      />
+
       <div className='balanceContainer'>
         {!isConnected ? (
           <div className='connectButtonContainer'>
@@ -57,7 +76,7 @@ function Balance({ isConnected, address }) {
               key={token.symbol}
               token={token}
               image={token.image}
-              address={address}
+              address={searchAddress}
             />
           ))
         )}

@@ -376,9 +376,10 @@ header {
   border-radius: 12px;
   padding: 20px;
   margin-top: 20px;
-  width: 50%;
-  max-width: 600px;
-  margin-left: auto;
+
+  width: 50%; // Change to 50% to fit half the screen width
+  max-width: 600px; // Adjust max-width to be more appropriate for the new width
+  margin-left: auto; // Center the component
   margin-right: auto;
 }
 
@@ -389,6 +390,7 @@ header {
 
 .controlsContainer {
   display: flex;
+
   margin-bottom: 20px;
 }
 
@@ -402,7 +404,7 @@ header {
 }
 
 .chartContainer {
-  height: 300px;
+  height: 300px; // Reduce height to fit the smaller container
   width: 100%;
 }
 
